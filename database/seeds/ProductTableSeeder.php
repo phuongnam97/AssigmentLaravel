@@ -70,25 +70,25 @@ class ProductTableSeeder extends Seeder
             [
                 'name'=>'Laptop Asus ROG HERO GL503VD-GZ119T, GTX1050 4G/Win 10',
                 'description'=>'Good laptop',
-                'price'=>'27000000',
+                'price'=>'27000',
                 'images'=>'https://hanoicomputercdn.com/media/product/38762_1.jpg',
                 'category'=>'Laptop Gaming'
             ],[
                 'name'=>'Laptop ASUS Gaming FX503VD- E4119T',
                 'description'=>'Good laptop',
-                'price'=>'25000000',
+                'price'=>'27000',
                 'images'=>'https://hanoicomputercdn.com/media/product/38367_1.jpg',
                 'category'=>'Laptop Gaming'
             ],[
                 'name'=>'Laptop Asus GM501GS-EI004T i7 8750HQ/16GB/1TB+SSH8G+512SSD/15.6 FHD/1070 8G/Win10',
                 'description'=>'Great Laptop',
-                'price'=>'64000000',
+                'price'=>'27000',
                 'images'=>'https://hanoicomputercdn.com/media/product/42115_gm501gs_1.jpg',
                 'category'=>'Laptop Gaming'
             ],[
                 'name'=>'Laptop MSI GAMING GT75 Titan 8RF CoffeeLake Core i7/Win 10',
                 'description'=>'Great Laptop',
-                'price'=>'79000000',
+                'price'=>'27000',
                 'images'=>'https://hanoicomputercdn.com/media/product/41917_1.png',
                 'category'=>'Laptop Gaming'
             ],
@@ -96,25 +96,25 @@ class ProductTableSeeder extends Seeder
             [
                 'name'=>'2017 Lamborghini Aventador S',
                 'description'=>'Great Car',
-                'price'=>'20000000000',
+                'price'=>'50000',
                 'images'=>'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/01/Lamborghini-Aventador-S-101.jpg?crop=1xw:1xh;center,center&resize=884:*',
                 'category'=>'Car'
             ],[
                 'name'=>'2019 Lamborghini Urus',
                 'description'=>'Great Car',
-                'price'=>'8000000000',
+                'price'=>'50000',
                 'images'=>'https://hips.hearstapps.com/hmg-prod/images/2019-lamborghini-urus-99leadgallery-1524865729.jpg?crop=1xw:1xh;center,center&resize=884:*',
                 'category'=>'Car'
             ],[
                 'name'=>'2019 Lamborghini Urus 2',
                 'description'=>'Great Car',
-                'price'=>'8000000000',
+                'price'=>'50000',
                 'images'=>'https://hips.hearstapps.com/hmg-prod/images/2019-lamborghini-urus-125-1524865734.jpg?crop=1xw:1xh;center,center&resize=884:*',
                 'category'=>'Car'
             ],[
                 'name'=>'2017 Lamborghini Aventador S 2',
                 'description'=>'Great Car',
-                'price'=>'15000000000',
+                'price'=>'50000',
                 'images'=>'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/01/Lamborghini-Aventador-S-115.jpg?crop=1xw:1xh;center,center&resize=884:*',
                 'category'=>'Car'
             ],
@@ -122,25 +122,25 @@ class ProductTableSeeder extends Seeder
             [
                 'name'=>'Honda blade',
                 'description'=>'Good motorbike',
-                'price'=>'25000000',
+                'price'=>'25000',
                 'images'=>'http://dragonbiketours.com/assets/img/honda-wave-rs.png',
                 'category'=>'Motorbike'
             ],[
                 'name'=>'Yamaha exciter',
                 'description'=>'Good motorbike',
-                'price'=>'25000000',
+                'price'=>'25000',
                 'images'=>'http://dragonbiketours.com/assets/img/bikes/yamaha-exciter.jpg',
                 'category'=>'Motorbike'
             ],[
                 'name'=>'Honda Futer FI',
                 'description'=>'Good motorbike',
-                'price'=>'25000000',
+                'price'=>'25000',
                 'images'=>'http://dragonbiketours.com/assets/img/bikes/honda-future-fi.jpg',
                 'category'=>'Motorbike'
             ],[
                 'name'=>'Honda XR 150',
                 'description'=>'Good motorbike',
-                'price'=>'25000000',
+                'price'=>'25000',
                 'images'=>'http://dragonbiketours.com/assets/img/bikes/honda-xr.jpg',
                 'category'=>'Motorbike'
             ],
