@@ -33,13 +33,15 @@
             color: black;
         }
 
-        #categoryMenu{
-            margin-left: 25px;
+        div.col-md-6 {
+            margin-top: 50px;
+            margin-left: 20px;
         }
 
-        #productMenu{
-            margin-left: 25px;
+        td,th {
+            border: 1px solid;
         }
+
     </style>
 </head>
 <body>
@@ -68,37 +70,30 @@
                         <li class="active li-1">
                             <a href="/admin/product"><span class="glyphicon glyphicon-home"></span> Homepage</a>
                         </li>
-                        <li class="li-1">
-                            <a href="#" data-toggle="collapse" data-target="#categoryMenu">
-                                Category <span class="glyphicon glyphicon-chevron-down"></span>
-                            </a>
-                        </li>
-
-                        <ul id="categoryMenu" class="list-unstyled">
-                            <li class="li-1"><a href="/admin/category"><span class="glyphicon glyphicon-list"></span> List category</a></li>
-                            <li class="li-1"><a href="/admin/category/create"><span class="glyphicon glyphicon-plus"></span>
-                                    Create new category</a></li>
-                        </ul>
-
-                        <li class="li-1">
-                            <a href="#" data-toggle="collapse" data-target="#productMenu">
-                                Product <span class="glyphicon glyphicon-chevron-down"></span>
-                            </a>
-                            <ul id="productMenu" class="list-unstyled">
-                                <li class="li-1">
-                                    <a href="/admin/product"><span class="glyphicon glyphicon-list"></span> List product </a>
-                                </li>
-                                <li class="li-1">
-                                    <a href="/admin/product/create"><span class="glyphicon glyphicon-plus"></span> Add new product</a>
-                                </li>
-                            </ul>
-                        </li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="col-md-9">
-            <h1>Product list</h1>
+            <div class="row">
+                <h1 class="col-md-6">Product list</h1>
+
+                <div class="col-md-6">
+                    <label>Category: </label>
+                    <span>
+                    <select name="category">
+                        <option>None</option>
+                        @foreach($list_category as $item)
+                            <option>{{$item->name}}</option>
+                        @endforeach
+                    </select>
+                </span>
+
+                </div>
+            </div>
+
+
+
             <table style="width:100%">
                 <tr>
                     <th>Name</th>
@@ -106,25 +101,14 @@
                     <th>Price</th>
                     <th>Category</th>
                     <th>Image</th>
-                    <th>Edit/Delete</th>
                 </tr>
                 @foreach($list_product as $item)
                     <tr>
-                        <td><a class="a-td" href="/admin/product/{{$item -> id}}">{{$item -> name}}</a></td>
-                        <td>{{$item->description}}</td>
-                        <td>{{$item->price}}</td>
-                        <td>{{$item->category}}</td>
-                        <td><img src="{{$item->images}}" alt="" style="width: 100px; border-radius: 50%"/></td>
-                        <td>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <a href="/admin/product/{{$item -> id}}/edit">Edit</a>
-                                </div>
-                                <div class="col-md-6">
-                                    <span class="btn-delete" id="{{$item-> id}}">Delete</span>
-                                </div>
-                            </div>
-                        </td>
+                        <td class="text-center"><a class="a-td" href="/admin/product/{{$item -> id}}">{{$item -> name}}</a></td>
+                        <td class="text-center">{{$item->description}}</td>
+                        <td class="text-center">{{$item->price}}</td>
+                        <td class="text-center">{{$item->category}}</td>
+                        <td class="text-center"><img src="{{$item->images}}" alt="" style="width: 100px; border-radius: 50%"/></td>
                     </tr>
                 @endforeach
             </table>
