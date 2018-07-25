@@ -75,11 +75,12 @@ class ProductController extends Controller
     public function edit($id)
     {
         $obj = Product::find($id);
+        $category = Category::all();
         if ($obj == null) {
             return view('404');
         }
         return view('admin.product.edit')
-            ->with('obj', $obj);
+            ->with('obj', $obj)->with('category', $category);
     }
 
     /**
@@ -92,6 +93,7 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         $obj = Product::find($id);
+        $category = new Category();
         if ($obj == null) {
             return view('404');
         }
