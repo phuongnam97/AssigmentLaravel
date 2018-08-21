@@ -10,9 +10,8 @@ class UserController extends Controller
 {
     public function index()
     {
-        $list_product = Product::all();
+        $list_product = Product::paginate(10);
         $list_category = Category::all();
-
         return view('user.list')->with('list_product', $list_product)->with('list_category', $list_category);
     }
 

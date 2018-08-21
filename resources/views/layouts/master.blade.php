@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-< lang="en">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Moc">
 
-    <title>Welcome to shop</title>
+    <title>@yield('title')</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
@@ -60,8 +60,8 @@
         margin-left: 25px;
     }
 </style>
-
 <body>
+
 <div id="wrapper">
 
     <!-- Navigation -->
@@ -123,35 +123,65 @@
         </ul>
 
         <!-- Sidebar -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
 
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="active"><i class="fa fa-dashboard fa-fw"></i> Item management</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Product Management</a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/admin/product"><i class="fa fa-th-list"></i> List Product</a>
+                            </li>
+                            <li>
+                                <a href="/admin/product/create"><i class="fa fa-plus"></i> Create New Product </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Category Management</a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/admin/category"><i class="fa fa-th-list"></i> List Category</a>
+                            </li>
+                            <li>
+                                <a href="/admin/category/create"><i class="fa fa-plus"></i> Create New Category </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
     </nav>
 
     <!-- Page Content -->
     <div id="page-wrapper">
         <div class="container-fluid">
-            <div class="col-md-9">
-                <h1>Product list</h1>
-                <table style="width:100%">
-                    <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Category</th>
-                        <th>Image</th>
-                    </tr>
-                    @foreach($list_product as $item)
-                        <tr>
-                            <td><a class="a-td" href="/admin/product/{{$item -> id}}">{{$item -> name}}</a></td>
-                            <td>{{$item->price}}</td>
-                            <td>{{$item->category}}</td>
-                            <td><img src="{{$item->images}}" alt="" style="width: 100px; border-radius: 50%"/></td>
-                        </tr>
-                    @endforeach
-                </table>
-                {{$list_product ->links()}}
+
+            <div class="row">
+                @section('content')
+                @show
             </div>
+
+            <!-- ... Your content goes here ... -->
+
+        </div>
     </div>
 
-</div>
 </div>
 
 <!-- jQuery -->
@@ -173,6 +203,6 @@
             Copyright Võ Hồ Phương Nam
         </div>
     </label>
-
 </footer>
+
 </html>

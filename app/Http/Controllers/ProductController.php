@@ -16,7 +16,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $list_product = Product::all();
+        $list_product = Product::paginate(10);
 
         return view('admin.product.list')->with('list_product', $list_product);
     }
@@ -120,5 +120,14 @@ class ProductController extends Controller
         }
         $obj->delete();
         return response('Deleted', 200);
+    }
+
+    public function searchByCategory($category){
+        $obj = Product::all()->where('category','like',$category);
+        if ($obj == null) {
+            return view('404');
+        }
+        return view('admin.product.list')
+            ->with('obj', $obj);
     }
 }

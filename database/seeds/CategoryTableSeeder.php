@@ -14,22 +14,22 @@ class CategoryTableSeeder extends Seeder
         DB::table('categories')->truncate();
         DB::table('categories')->insert([
             [
-                'name'=>'Lipstick',
-                'description'=>'Lipstick for women'
+                'name'=>'Xe tay ga',
+                'description'=>'Xe không dùng côn và số'
             ],
             [
-                'name'=>'Cake',
-                'description'=>'Cake to eat'
+                'name'=>'Xe côn',
+                'description'=>'Xe đẹp'
             ],
             [
-                'name'=>'Laptop Gaming',
-                'description'=>'Laptop to play'
+                'name'=>'Xe số',
+                'description'=>'Xe máy phổ biến tại Việt Nam'
             ],[
-                'name'=>'Car',
-                'description'=>'Car to drive'
+                'name'=>'Xe tải',
+                'description'=>'Xe để chở vật liệu'
             ],[
-                'name'=>'Motorbike',
-                'description'=>'Motorbike to ride'
+                'name'=>'Xe đua',
+                'description'=>'Xe để đua F1'
             ]
         ]);
     }

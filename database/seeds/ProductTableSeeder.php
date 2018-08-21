@@ -14,135 +14,135 @@ class ProductTableSeeder extends Seeder
         DB::table('products')->truncate();
         DB::table('products')->insert([
             [
-                'name'=>'Peach Kiss Moisture Matte Long Wear Lipstick – Peaches and Cream Collection',
-                'description'=>'Start by applying Lip Insurance Lip Primer all over lips for the perfect base. Then, blend multiple Peach Kiss colors together to create an ombré effect.',
-                'price'=>'200000',
-                'images'=>'https://www.sephora.com/productimages/sku/s1961291-main-thumb-50.jpg',
-                'category'=>'Lipstick'
+                'name'=>'Suzuki Address 110Fi',
+                'description'=>'Suzuki Address 110Fi là mẫu xe có thiết kế trẻ trung hiện đại và khối động cơ mạnh mẽ.',
+                'price'=>'28000000',
+                'images'=>'https://vnn-imgs-f.vgcloud.vn/2018/04/14/09/xe-ga-1.jpg',
+                'category'=>'Xe tay ga'
             ],
             [
-                'name'=>'Everlasting Liquid Lipstick',
-                'description'=>'A long-wear, high-pigment liquid lipstick with a smooth, matte finish and all-day, lightweight comfort.',
-                'price'=>'260000',
-                'images'=>'https://www.sephora.com/productimages/sku/s1890623-main-thumb-50.jpg',
-                'category'=>'Lipstick'
+                'name'=>'Suzuki Impulse 125 Fi',
+                'description'=>'Impulse là mẫu xe có thiết kế cao cấp và hiện đại với đầu xe cá tính.',
+                'price'=>'31000000',
+                'images'=>'https://vnn-imgs-f.vgcloud.vn/2018/04/14/09/xe-ga-2.jpg',
+                'category'=>'Xe tay ga'
             ],
             [
-                'name'=>'Cream Lip Stain Liquid Lipstick',
-                'description'=>'A silky, long-lasting lip stain that keeps lips covered with bold color from AM to PM—no need to reapply or touch up throughout the day. ',
-                'price'=>'500000',
-                'images'=>'https://www.sephora.com/productimages/sku/s1959535-main-thumb-50.jpg',
-                'category'=>'Lipstick'
+                'name'=>'Yamaha Janus',
+                'description'=>'Yamaha Janus là dòng xe tay ga phổ thông giá rẻ của hãng Yamaha. ',
+                'price'=>'32000000',
+                'images'=>'https://vnn-imgs-f.vgcloud.vn/2018/04/14/09/xe-ga-3.jpg',
+                'category'=>'Xe tay ga'
             ],[
-                'name'=>'Mattemoiselle Plush Matte Lipstick',
-                'description'=>'An ultra-slim lipstick with a long-wearing, petal-soft matte finish, created in a rainbow of weightless, color-intense shades designed to flatter all skin tones. ',
-                'price'=>'360000',
-                'images'=>'https://www.sephora.com/productimages/sku/s2018224-main-thumb-50.jpg',
-                'category'=>'Lipstick'
-            ],
-
-            [
-                'name'=>'Matcha mousse cake',
-                'description'=>'Good matcha cake',
-                'price'=>'300000',
-                'images'=>'https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/matcha-mousse-cake.jpg',
-                'category'=>'Cake'
-            ],[
-                'name'=>'Pimm\'s cake',
-                'description'=>'Good Pimm\'s cake',
-                'price'=>'400000',
-                'images'=>'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/07/pimms-cake.jpg?itok=Jfan_PED',
-                'category'=>'Cake'
-            ],[
-                'name'=>'Black tahini chocolate cookies',
-                'description'=>'Good cookies',
-                'price'=>'200000',
-                'images'=>'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/06/black-tahini-chocolate-cookies.jpg?itok=DK-mHpd4',
-                'category'=>'Cake'
-            ],[
-                'name'=>'Lemon drizzle slices',
-                'description'=>'Good Lemon drizzle slices',
-                'price'=>'150000',
-                'images'=>'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/06/lemon-drizzle-slices.jpg?itok=RbEfdaQL',
-                'category'=>'Cake'
+                'name'=>'Honda Air Blade',
+                'description'=>'Với thiết kế tinh tế, thon gọn kết hợp cùng những đường nét, mạnh mẽ. ',
+                'price'=>'40000000',
+                'images'=>'https://vnn-imgs-f.vgcloud.vn/2018/04/14/09/xe-ga-7.jpg',
+                'category'=>'Xe tay ga'
             ],
 
             [
-                'name'=>'Laptop Asus ROG HERO GL503VD-GZ119T, GTX1050 4G/Win 10',
-                'description'=>'Good laptop',
-                'price'=>'27000',
-                'images'=>'https://hanoicomputercdn.com/media/product/38762_1.jpg',
-                'category'=>'Laptop Gaming'
+                'name'=>'Yamaha Exciter 150',
+                'description'=>'Exciter 150 là mẫu xe côn tay giá rẻ đáng để mua nhất tại thị trường Việt hiện nay.',
+                'price'=>'47000000',
+                'images'=>'https://muasamxe.com/wp-content/uploads/2017/06/exciter-150-1.jpg',
+                'category'=>'Xe côn'
             ],[
-                'name'=>'Laptop ASUS Gaming FX503VD- E4119T',
-                'description'=>'Good laptop',
-                'price'=>'27000',
-                'images'=>'https://hanoicomputercdn.com/media/product/38367_1.jpg',
-                'category'=>'Laptop Gaming'
+                'name'=>'Honda Winner 150',
+                'description'=>'Mẫu xe côn tay Honda Winner 2017 vừa bổ sung thêm 3 màu mới là cam, vàng và xanh da trời',
+                'price'=>'45000000',
+                'images'=>'https://muasamxe.com/wp-content/uploads/2017/06/honda-winner-150-2.jpg',
+                'category'=>'Xe côn'
             ],[
-                'name'=>'Laptop Asus GM501GS-EI004T i7 8750HQ/16GB/1TB+SSH8G+512SSD/15.6 FHD/1070 8G/Win10',
-                'description'=>'Great Laptop',
-                'price'=>'27000',
-                'images'=>'https://hanoicomputercdn.com/media/product/42115_gm501gs_1.jpg',
-                'category'=>'Laptop Gaming'
+                'name'=>'Suzuki Raider 150',
+                'description'=>'Suzuki Raider R150 nằm trong phân khúc xe côn tay dưới 175 phân khối.',
+                'price'=>'50000000',
+                'images'=>'https://muasamxe.com/wp-content/uploads/2017/06/suzuki-raider-150-fi-15.jpg',
+                'category'=>'Xe côn'
             ],[
-                'name'=>'Laptop MSI GAMING GT75 Titan 8RF CoffeeLake Core i7/Win 10',
-                'description'=>'Great Laptop',
-                'price'=>'27000',
-                'images'=>'https://hanoicomputercdn.com/media/product/41917_1.png',
-                'category'=>'Laptop Gaming'
+                'name'=>'Brixton BX 125/150',
+                'description'=>'Brixton BX 125 2017 sẽ có 3 phiên bản là Classic, Cafe Racer (BX 125 R) và Scrambler (BX 125 X).',
+                'price'=>'55900000',
+                'images'=>'https://muasamxe.com/wp-content/uploads/2017/06/brixton-bx-150-1-1.jpg',
+                'category'=>'Xe côn'
             ],
 
             [
-                'name'=>'2017 Lamborghini Aventador S',
-                'description'=>'Great Car',
-                'price'=>'50000',
-                'images'=>'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/01/Lamborghini-Aventador-S-101.jpg?crop=1xw:1xh;center,center&resize=884:*',
-                'category'=>'Car'
+                'name'=>'Yamaha Sirius ',
+                'description'=>'mẫu xe số phổ thông Yamaha Sirius bán chạy nhất phân khúc',
+                'price'=>'22000000',
+                'images'=>'https://znews-photo-td.zadn.vn/Uploaded/mfssa/2017_08_22/xs1.jpg',
+                'category'=>'Xe số'
             ],[
-                'name'=>'2019 Lamborghini Urus',
-                'description'=>'Great Car',
-                'price'=>'50000',
-                'images'=>'https://hips.hearstapps.com/hmg-prod/images/2019-lamborghini-urus-99leadgallery-1524865729.jpg?crop=1xw:1xh;center,center&resize=884:*',
-                'category'=>'Car'
+                'name'=>'Honda Wave Alpha ',
+                'description'=>'Mức giá rẻ và dễ sử dụng là những ưu điểm của dòng xe này.',
+                'price'=>'17000000',
+                'images'=>'https://znews-photo-td.zadn.vn/Uploaded/mfssa/2017_08_22/alpha2_zing.jpg',
+                'category'=>'Xe số'
             ],[
-                'name'=>'2019 Lamborghini Urus 2',
-                'description'=>'Great Car',
-                'price'=>'50000',
-                'images'=>'https://hips.hearstapps.com/hmg-prod/images/2019-lamborghini-urus-125-1524865734.jpg?crop=1xw:1xh;center,center&resize=884:*',
-                'category'=>'Car'
+                'name'=>'Honda Blade 110 ',
+                'description'=>'Là dòng xe mới xuất hiện trên thị trường vài năm trở lại đây.',
+                'price'=>'21100000',
+                'images'=>'https://znews-photo-td.zadn.vn/Uploaded/mfssa/2017_08_22/xs3.jpg',
+                'category'=>'Xe số'
             ],[
-                'name'=>'2017 Lamborghini Aventador S 2',
-                'description'=>'Great Car',
-                'price'=>'50000',
-                'images'=>'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/01/Lamborghini-Aventador-S-115.jpg?crop=1xw:1xh;center,center&resize=884:*',
-                'category'=>'Car'
+                'name'=>'Honda Wave RSX Fi ',
+                'description'=>'Mẫu xe số Wave RSX Fi với động cơ phun xăng điện tử, kiểu dáng khỏe khoắn, thể thao khá thu hút người dùng nam giới.',
+                'price'=>'24490000',
+                'images'=>'https://znews-photo-td.zadn.vn/Uploaded/mfssa/2017_08_22/xs8.jpg',
+                'category'=>'Xe số'
             ],
 
             [
-                'name'=>'Honda blade',
-                'description'=>'Good motorbike',
-                'price'=>'25000',
-                'images'=>'http://dragonbiketours.com/assets/img/honda-wave-rs.png',
-                'category'=>'Motorbike'
+                'name'=>'Belaz 75710',
+                'description'=>'Dài hơn 20 mét, rộng 10 mét, cao hơn 8 mét, tải trọng 450 tấn',
+                'price'=>'5000000',
+                'images'=>'http://streaming1.danviet.vn/upload/3-2016/images/2016-07-03/146754236597004-xe-tai1.jpg',
+                'category'=>'Xe tải'
             ],[
-                'name'=>'Yamaha exciter',
-                'description'=>'Good motorbike',
-                'price'=>'25000',
-                'images'=>'http://dragonbiketours.com/assets/img/bikes/yamaha-exciter.jpg',
-                'category'=>'Motorbike'
+                'name'=>'The Caterpillar 797B',
+                'description'=>'Cao 7.6 mét, dài 14.5 mét, tải trọng 380 tấn.',
+                'price'=>'450000',
+                'images'=>'http://streaming1.danviet.vn/upload/3-2016/images/2016-07-03/14675423652118-xe-tai2.jpg',
+                'category'=>'Xe tải'
             ],[
-                'name'=>'Honda Futer FI',
-                'description'=>'Good motorbike',
-                'price'=>'25000',
-                'images'=>'http://dragonbiketours.com/assets/img/bikes/honda-future-fi.jpg',
-                'category'=>'Motorbike'
+                'name'=>'Terex MT6300AC',
+                'description'=>'Dài 14.63 mét, cao 7.92 mét, trọng tải 400 tấn.',
+                'price'=>'520000',
+                'images'=>'http://streaming1.danviet.vn/upload/3-2016/images/2016-07-03/146754236548202-xe-tai3.jpg',
+                'category'=>'Xe tải'
             ],[
-                'name'=>'Honda XR 150',
-                'description'=>'Good motorbike',
-                'price'=>'25000',
-                'images'=>'http://dragonbiketours.com/assets/img/bikes/honda-xr.jpg',
-                'category'=>'Motorbike'
+                'name'=>'Liebherr T 284',
+                'description'=>'Dài 15.69 mét, cao 7.42 mét, tải trọng 400 tấn.',
+                'price'=>'5300000',
+                'images'=>'http://streaming1.danviet.vn/upload/3-2016/images/2016-07-03/146754236526956-xe-tai4.jpg',
+                'category'=>'Xe tải'
+            ],
+
+            [
+                'name'=>'Aston Martin AM-RB 001',
+                'description'=>'được thiết kế lấy cảm hứng từ xe đua F1, kết hợp giữa hãng xe Anh Quốc và đội đua Red Bull Racing.',
+                'price'=>'2500000',
+                'images'=>'https://znews-photo-td.zadn.vn/w960/Uploaded/zagtit/2016_08_15/AstonMartinRedBullAMRB001debut02.jpg',
+                'category'=>'Xe đua'
+            ],[
+                'name'=>'Ferrari LaFerrari Aperta',
+                'description'=>'LaFerrari Aperta mang những đặc tính vận hành tương tự như bản coupe, dù trọng lượng xe tăng lên. ',
+                'price'=>'1300000',
+                'images'=>'https://znews-photo-td.zadn.vn/w960/Uploaded/zagtit/2016_08_15/ferrarilaferrariapertac187111072016180349_9.jpg',
+                'category'=>'Xe đua'
+            ],[
+                'name'=>'McLaren P1 LM',
+                'description'=>'Là phiên bản nâng cấp của những chiếc P1, được sản xuất bởi Lanzante Motorsport.',
+                'price'=>'1800000',
+                'images'=>'https://znews-photo-td.zadn.vn/w960/Uploaded/zagtit/2016_08_15/McLarenXP1LM7_1.jpg',
+                'category'=>'Xe đua'
+            ],[
+                'name'=>'Bugatti Vision GranTurismo',
+                'description'=>'ao hơn so với Bugatti Chiron ra mắt cách đây không lâu. ',
+                'price'=>'2200000',
+                'images'=>'https://znews-photo-td.zadn.vn/w960/Uploaded/zagtit/2016_08_15/BugattiVisionGranTurismo1.jpg',
+                'category'=>'Xe đua'
             ],
         ]);
     }
